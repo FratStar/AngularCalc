@@ -1,0 +1,7 @@
+<form [formGroup]="logonform" class="loginform" (ngSubmit)="onSubmit()" onsubmit="return false">
+  <mat-form-field class="loginfield">
+    <mat-label>Name</mat-label>
+    <input matInput class="nameInput" placeholder="Your Name" formControlName="username">
+    <button mat-flat-button class="subbutton" value="" [disabled]="!logonform.valid" type="submit">Submit</button>
+  </mat-form-field>
+</form>

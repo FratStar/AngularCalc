@@ -1,0 +1,29 @@
+@import '../calculator/calculator.component.scss';
+
+.loginfield{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+::ng-deep .nameInput{
+  background-color: black;
+  text-decoration-color: green;
+}
+
+.subbutton{
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  position: relative;
+  left: 102%;
+
+}
+::ng-deep .mat-form-field-underline {
+  background-color: black;
+}
+::ng-deep .mat-form-field-empty.mat-form-field-label {
+  color: white;
+}

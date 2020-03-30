@@ -1,0 +1,37 @@
+<div class="calculator">
+  <div class="maindisplay" >{{ mainText }}</div>
+  <div class="subdisplay">{{ subText }}</div>
+
+  <div class="operator-keys">
+
+    <button mat-flat-button class="operator" value="+" (click)="getOperation('+')">+</button>
+    <button mat-flat-button class="operator" value="-" (click)="getOperation('-')">-</button>
+    <button mat-flat-button class="operator" value="*" (click)="getOperation('*')">&times;</button>
+    <button mat-flat-button class="operator" value="/" (click)="getOperation('/')">&divide;</button>
+    <button mat-flat-button class="operator" value="!" (click)="getOperation('!')">!</button>
+    <button mat-flat-button class="operator" value="e" (click)="getOperation('exp')">e<sup>x</sup></button>
+    <button mat-flat-button class="operator" value="ln" (click)="getOperation('ln')">ln(x)</button>
+    <button mat-flat-button class="operator" value="sqrt" (click)="getOperation('sqrt')">&radic;</button>
+  </div>
+
+  <div class="keypad-keys">
+    <button mat-flat-button value="7" (click)="getNumber('7')">7</button>
+    <button mat-flat-button value="8" (click)="getNumber('8')">8</button>
+    <button mat-flat-button value="9" (click)="getNumber('9')">9</button>
+
+    <button mat-flat-button value="4" (click)="getNumber('4')">4</button>
+    <button mat-flat-button value="5" (click)="getNumber('5')">5</button>
+    <button mat-flat-button value="6" (click)="getNumber('6')">6</button>
+
+    <button mat-flat-button value="1" (click)="getNumber('1')">1</button>
+    <button mat-flat-button value="2" (click)="getNumber('2')">2</button>
+    <button mat-flat-button value="3" (click)="getNumber('3')">3</button>
+
+    <button mat-flat-button value="0" (click)="getNumber('0')">0</button>
+    <button mat-flat-button class="decimal" value="." (click)="getDecimal()">.</button>
+    <button mat-flat-button class="all-clear" value="all-clear" (click)="clear()">AC</button>
+
+    <button mat-flat-button class="equal-sign" value="=" (click)="getAnswer()">=</button>
+
+  </div>
+</div>
