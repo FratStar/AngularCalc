@@ -14,16 +14,17 @@
 }
 
 .subbutton{
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: right;
   position: relative;
-  left: 102%;
+  left: 105%;
 
 }
+
 ::ng-deep .mat-form-field-underline {
   background-color: black;
 }
 ::ng-deep .mat-form-field-empty.mat-form-field-label {
-  color: white;
+  color: red !important;
 }

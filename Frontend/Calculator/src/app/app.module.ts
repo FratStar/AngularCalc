@@ -25,6 +25,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
   ],
   providers: [CalculatorService],
-  bootstrap: [AppComponent, CalculatorComponent, NameComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
